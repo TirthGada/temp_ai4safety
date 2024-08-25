@@ -1,0 +1,78 @@
+/* General styling for the camera list container */
+body {
+  background-color: #fff; /* White background for the entire page */
+}
+
+.camera-list-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title styling */
+.title {
+  color: #07cdc7;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the camera list */
+.camera-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling for each camera item */
+.camera-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f8fc; /* Light background for each camera item */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for separation */
+  color: #000; /* Black text */
+}
+
+/* Styling for the camera label and IP */
+.camera-label, .camera-ip {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Styling for the edit button */
+.edit-button {
+  background-color: #00CCCB;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #04FBB9;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .camera-list-container {
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+  .camera-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .camera-label, .camera-ip {
+    margin-bottom: 10px;
+  }
+
+  .edit-button {
+    align-self: flex-end;
+  }
+}
